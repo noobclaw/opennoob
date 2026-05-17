@@ -1,0 +1,22 @@
+{
+  "name": "opennoob",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TypeScript toolkit for building Claude-powered desktop assistants — chat-platform adapters, agent skills, and Electron/Tauri packaging utilities.",
+  "license": "MIT",
+  "author": "OpenNoob Contributors",
+  "homepage": "https://github.com/noobclaw/opennoob",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noobclaw/opennoob.git"
+  },
+  "workspaces": [
+    "skills/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test:typecheck:im": "tsc --noEmit -p src/main/im/tsconfig.json"
+  }
+}
